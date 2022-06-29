@@ -27,24 +27,31 @@
     <div class="container">
       <div class="header-info-nav">
         <div class="temp">
-          <p class="current-temp">59°</p>
-          <span>59° / 46°</span>
+          <p class="current-temp">
+            59°
+            <span class="celsiusFahrenheit">
+              <a href="#" id="celsius">°C</a>
+              |
+              <a href="#" id="fahrenheit"> °F</a>
+            </span>
+          </p>
+          <span class="dailyHighLow">59° / 46°</span>
         </div>
         <div class="location-icon">
-          <h1>Kalaloch, WA</h1>
+          <h1 id="currentCity">Kalaloch, WA</h1>
+          <div class="date" id="currentDate"></div>
           <h2>
             <i class="fa-solid fa-cloud-sun"></i>
           </h2>
         </div>
       </div>
 
-    <div class="nav-toggle-bar">
-      <span class="nav-toggle-bar-btn">5 Day Forecast</span>
-      <span class="nav-toggle-bar-btn">Hourly</span>
-      <span class="nav-toggle-bar-btn">Details</span>
-    </div>
+      <div class="nav-toggle-bar">
+        <span class="nav-toggle-bar-btn">5 Day Forecast</span>
+        <span class="nav-toggle-bar-btn">Hourly</span>
+        <span class="nav-toggle-bar-btn">Details</span>
+      </div>
 
-    
       <div class="row">
         <div class="col">
           <div class="card">
@@ -106,12 +113,17 @@
               id="input"
               placeholder="Enter City"
             />
-            <button type="submit" class="btn btn-primary mx-1 button">
+            <button
+              type="submit"
+              id="btn_submit"
+              class="btn btn-primary mx-1 button"
+            >
               Search
             </button>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

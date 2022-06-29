@@ -34,11 +34,11 @@ body::after {
 }
 
 .location-icon h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .location-icon h2 i {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 .temp {
@@ -61,6 +61,25 @@ body::after {
   justify-content: space-between;
 }
 
+.celsiusFahrenheit {
+  font-size: 1.2rem;
+}
+#celsius {
+  color: white;
+}
+
+#celsius:hover {
+  color: rgb(103, 116, 84);
+}
+
+#fahrenheit {
+  color: white;
+}
+
+#fahrenheit:hover {
+  color: rgb(103, 116, 84);
+}
+
 .nav-toggle-bar {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -75,10 +94,6 @@ body::after {
   font-size: 1.2rem;
   padding: 1rem 2.5rem;
 }
-
-/* .nav-toggle-bar-btn:hover {
-  border-bottom: 5px white solid;
-} */
 
 div .current-temp {
   text-align: left;
@@ -131,7 +146,7 @@ input[type="text"]:focus {
 
 button.button {
   background-color: rgb(103, 116, 84);
-  border: rgb(103, 116, 84);
+  border: rgb(182, 182, 182);
   color: white;
   text-shadow: 1px 1px 2px #312f2f;
 }
